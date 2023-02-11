@@ -5,85 +5,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/LogoAE.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Amazing Events - Home </title>
-    <!-- incorporporar favicon -->
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg bg-danger-subtle text-emphasis-danger">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/LogoAE.png" alt="Logo" width="120" height="35" 
-                    class="d-inline-block align-text-top">
-                </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-danger-subtle text-emphasis-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/LogoAE.png" alt="Logo" width="120" height="35" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav ">
-                <a class="btn bg-transparent btn-outline-secondary me-md-2" href="#">Home</a>
-                <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./upcomingevents.html">Upcoming Events</a>
-                <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./pastevent.html">Past Events</a>
-                <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./contact.html">Contact</a>
-                <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./stats.html">Stats</a>
+                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./index.html">Home</a>
+                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./upcomingevents.html">Upcoming
+                        Events</a>
+                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./pastevent.html">Past Events</a>
+                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./contact.html">Contact</a>
+                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./stats.html">Stats</a>
                 </div>
             </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
     <header>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <h3><a href="./upcomingevents.html">Upcoming Events</a></h3>
-                    </div>
-                    <div class="carousel-item">
-                        <h3><a href="./pastevent.html">Past Events</a></h3>
-                    </div>
-                    <div class="carousel-item ">
-                        <h3><a href="./contact.html">Contact</a></h3>
-                    </div>
-                    <div class="carousel-item ">
-                        <h3><a href="./stats.html">Stats</a></h3>
-                    </div>
+        <div class="banner">
+            <button class="button" class="btn btn-outline-secondary">
+                <a class="button" class="btn btn-outline-secondary" href="./stats.html"><span> &#10096;
+                </a></button></span>
+            <h3 class="subtittle">Home</h3>
+            <button class="button" class="btn btn-outline-secondary">
+                <a class="button" class="btn btn-outline-secondary" href="./upcomingevents.html"><span> &#10097;
+                </a></button></span>
+        </div>
+        <div class="checkboxs-buscador">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Category</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Category</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Category</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Category</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Category</label>
+            </div>
+            <div class="input-group">
+                <div id="navbar-search-autocomplete" class="form-outline">
+                    <input type="search" id="form1" class="form-control">
+                    <label class="form-label" for="form1"></label>
                 </div>
-                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon btn btn-secondary" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon btn btn-secondary" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <button class="buttonsearch" type="button">
+                    <i class="fas fa-search"></i>
                 </button>
             </div>
-
-
-
-
-
-
-            <!-- <h1><a href="#">Home</a></h1>
-            <a href="./upcomingevents.html">Upcoming Events</a>
-            <a href="./pastevent.html">Past Events</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./stats.html">Stats</a> -->
-
-    <!-- aca va el banner home y dos flechas a los costados que tienen
-                 que linkear a la pagina anterior y a la siguiente segun el orden del menu -->
+        </div>
+        </div>
     </header>
-    <main>
-        <section>
-            <!--  checkboxs + buscador  -->
+
+    <main class="bg-main-home-upcommingevents">
+        <section class="seccion-cards">
+            <div class="card">
+                <img src="./assets/Music_Concert.jpg" alt="Foto">
+                <div class="card-body">
+                    <h5 class="card-title">El Titulo</h5>
+                    <p class="card-text">Aquí va la descripción de lo que sea</p>
+                </div>
+                <div class="card-body2">
+                    <span>Price: $20000 </span>
+                    <a class="btn btn-outline-secondary me-md-2" href="">Ver más</a>
+                </div>
+            </div>
         </section>
-        <section>
-            <!--  cards -->
+        <section class="seccion-cards">
+            <div class="card">
+                <img src="" class="card-img-top" alt="Foto">
+                <div class="card-body">
+                    <h5 class="card-title">El Titulo</h5>
+                    <p class="card-text">Aquí va la descripción de lo que sea</p>
+                </div>
+                <div class="card-body2">
+                    <span>Price: $20000 </span>
+                    <a class="btn btn-outline-secondary me-md-2" href="">Ver más</a>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-cards">
+            <div class="card">
+                <img src="" class="card-img-top" alt="Foto">
+                <div class="card-body">
+                    <h5 class="card-title">El Titulo</h5>
+                    <p class="card-text">Aquí va la descripción de lo que sea</p>
+                </div>
+                <div class="card-body2">
+                    <span>Price: $20000 </span>
+                    <a class="btn btn-outline-secondary me-md-2" href="">Ver más</a>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-cards">
+            <div class="card">
+                <img src="" class="card-img-top" alt="Foto">
+                <div class="card-body">
+                    <h5 class="card-title">El Titulo</h5>
+                    <p class="card-text">Aquí va la descripción de lo que sea</p>
+                </div>
+                <div class="card-body2">
+                    <span>Price: $20000 </span>
+                    <a class="btn btn-outline-secondary me-md-2" href="">Ver más</a>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
         <!--  iconos ig fb y wsp + "cohort" -->
     </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
