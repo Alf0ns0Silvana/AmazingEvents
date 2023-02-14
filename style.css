@@ -132,6 +132,19 @@
     padding: 10px;
 }
 
+table{
+    width: 80%;
+}
+table, td, th{
+    padding: 15px 3px;
+    border: 1px solid black;
+}
+tbody td{ 
+    border: 1px solid black;
+}
+th{
+    background-color: rgb(197, 197, 197);
+}
 /* seccion contact */
 
 .bg-main-contact{
