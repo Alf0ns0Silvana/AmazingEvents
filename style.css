@@ -123,7 +123,14 @@
 
 /* seccion stats */
 
-
+.bg-main-stats{
+    height: 70vh;
+    display: flex;
+    background-color: #ffdcdc;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
 
 /* seccion contact */
 
@@ -151,6 +158,13 @@
     background-color: transparent;
     border: 1px solid rgb(122, 122, 122);
     background-color:rgb(122, 122, 122);
+}
+.subtittle2{
+    text-align: center;
+    color: rgb(146, 146, 146);
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: 100;
 }
 
 /* footer */ 
