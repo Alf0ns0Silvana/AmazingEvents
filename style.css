@@ -106,7 +106,7 @@
     background-color: #fff;
     padding: 30px;
     margin-top: 50px;
-    width: 60%;
+    width: 80%;
     height: 45vh;
 }
 .card-event img{
@@ -121,30 +121,6 @@
     width: 50%;
 }
 
-/* seccion stats */
-
-.bg-main-stats{
-    height: 70vh;
-    display: flex;
-    background-color: #ffdcdc;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px;
-}
-
-table{
-    width: 80%;
-}
-table, td, th{
-    padding: 15px 3px;
-    border: 1px solid black;
-}
-tbody td{ 
-    border: 1px solid black;
-}
-th{
-    background-color: rgb(197, 197, 197);
-}
 /* seccion contact */
 
 .bg-main-contact{
@@ -180,6 +156,31 @@ th{
     font-weight: 100;
 }
 
+/* seccion stats */
+
+.bg-main-stats{
+    height: 70vh;
+    display: flex;
+    background-color: #ffdcdc;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+table{
+    width: 80%;
+}
+table, td, th{
+    padding: 15px 3px;
+    border: 1px solid black;
+}
+tbody td{ 
+    border: 1px solid black;
+}
+th{
+    background-color: rgb(197, 197, 197);
+}
+
 /* footer */ 
 
 .footer{
@@ -202,4 +203,169 @@ th{
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .banner{
+        display: flex;
+        height: 10vh;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .checkboxs-buscador{
+        background-color: #ffdcdc;
+        display: flex;
+        padding-left: 20px;
+    }
+    .input-group{
+        margin-top: 0px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .buttonsearch{
+        height: 40px;
+        padding: 5px;
+        margin: 0px 5px;
+        border: none;
+        background-color: #ffdcdc;
+    }
+    .bg-main-home-upcommingevents{
+        height: 100vh;
+        display: unset;
+        display: flex;
+        background-color: #ffdcdc;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .seccion-cards{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 35px;
+    }
+    .card{
+        width: 100%;
+        padding: 30px 25px;
+    }
+    .bg-main-event{
+        padding: unset;
+    }
+    .card-event{
+        display: block;
+        margin-top: unset;
+        width: 50%;
+        height: 80vh;
+    }
+    .card-event img{
+        width: 100%;
+        height: 40vh;
+    }
+    .card-event-body {
+        margin: unset;
+        height: 30vh;
+        padding-top: 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .formulario {
+        width: 60%;
+    }
+    .bg-main-stats{
+        display: block;
+        height: unset;
+        height: 100vh;
+        background-color: #ffdcdc;
+    }
+    table{
+        background-color: #ffdcdc;
+        width: 100%;
+        flex-direction: column;
+    }
+    .table, td, th{
+        padding: unset;
+        padding: 10px;
+    }
+}
+
+ @media screen and (max-width: 700px) {
+    
+    .checkboxs-buscador{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
+    .input-group{
+        margin: 10px;
+        padding: 5px;
+        justify-content: center;
+    }
+    .buttonsearch{
+        height: 40px;
+        padding: 5px;
+        margin: 0px 5px;
+        border: none;
+    }
+
+    .bg-main-home-upcommingevents{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+}
+    .seccion-cards{
+        display: flex;
+        flex-direction: row;
+        margin: 5px 5px;
+        flex-wrap: nowrap;
+    }
+    .card{
+        width: 99%;
+        padding: 15px 15px;
+    }
+    
+    .bg-main-event{
+        padding: unset;
+    }
+    .card-event{
+        display: block;
+        margin-top: unset;
+        width: 80%;
+        height: 80vh;
+    }
+    .card-event img{
+        width: 100%;
+        height: 40vh;
+    }
+    .card-event-body {
+        margin: unset;
+        height: 30vh;
+        padding-top: 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .formulario {
+        width: 80%;
+    }
+
+    .bg-main-stats{
+        display: block;
+        height: unset;
+        height: 100vh;
+        background-color: #ffdcdc;
+    }
+    table{
+        background-color: #ffdcdc;
+        width: 100%;
+        flex-direction: column;
+    }
+    .table, td, th{
+        padding: unset;
+        padding: 10px;
+    }
 }
