@@ -1,6 +1,4 @@
 let htmlEvents = "";
-let cardContainer = document.getElementById("cardContainer");
-
 let currentDate = new Date(data.currentDate);
 for (let event of data.events) {
     let eventDate = new Date(event.date);
@@ -17,5 +15,5 @@ for (let event of data.events) {
           </div>
         </div>`;
     }
-console.log(htmlEvents)
 }
+    console.log(htmlEvents)
