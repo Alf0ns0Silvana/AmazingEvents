@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffdcdc;
+    background-color: #832828;
     width: 100%;
     height: 10vh;
 }
@@ -20,8 +20,8 @@
     width: 100px;
     text-decoration: none;
     text-align: center;
-    color: rgb(146, 146, 146);
-    background-color: #ffdcdc;
+    color: #fff;
+    background-color: #832828;
     border: none;
     padding: 5px 10px;
     font-size: 20px;
@@ -37,15 +37,19 @@
     padding-left: 25px;
 }
 .subtittle{
-    color: rgb(146, 146, 146);
+    color:#fff;
     font-size: 35px;
-    font-style: oblique;
+    font-style: normal;
     font-weight: 400;
 }
 .checkboxs-buscador{
-    background-color: #ffdcdc;
+    color: #fff;
+    background-color: #832828;
     display: flex;
-    padding-left: 20px;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    padding-left: 25px;
+
 }
 .input-group{
     margin-top: 0px;
@@ -57,12 +61,13 @@
     padding: 5px;
     margin: 0px 5px;
     border: none;
-    background-color: #ffdcdc;
+    color: #fff;
+    background-color: #832828;
 }
 .bg-main-home-upcommingevents{
-    height: 70vh;
+    height: 100vh;
     display: flex;
-    background-color: #ffdcdc;
+    background-color: #fff;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
@@ -124,44 +129,46 @@
 /* seccion contact */
 
 .bg-main-contact{
-    background-color: #ffdcdc;
-    height: 75vh;
+    background-color: #fff;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start
 } 
-.formulario {
-    padding: 10px;
-    margin: 10px;
-    width: 30%;
+.formulario{
+    padding: 30px;
+    margin: 30px;
+    width: 50%;
 }
 .formulario .btn {
     margin-top: 10px;
-    border: 1px solid rgb(146, 146, 146);
+    border: 1px solid #832828 ;
     background-color:transparent;
-    color: rgb(146, 146, 146); 
+    color: #832828
 }
 .formulario .btn:hover{
-    color: white;
+    color: #fff;
     background-color: transparent;
-    border: 1px solid rgb(122, 122, 122);
-    background-color:rgb(122, 122, 122);
+    border: 1px solid #832828;
+    background-color: #832828;
 }
 .subtittle2{
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
-    color: rgb(146, 146, 146);
-    font-size: 25px;
+    color: #832828;
+    font-size: 30px;
     font-style: oblique;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /* seccion stats */
 
 .bg-main-stats{
-    height: 70vh;
+    height: 100vh;
     display: flex;
-    background-color: #ffdcdc;
+    background-color: #fff;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
@@ -178,18 +185,20 @@ tbody td{
     border: 1px solid black;
 }
 th{
-    background-color: rgb(197, 197, 197);
+    color: #fff;
+    background-color: #832828
 }
 
 /* footer */ 
 
 .footer{
     display: flex;
-    background-color:#ffdcdc
+    background-color: #181818;
 }
 .iconos-footer{
+    color: #fff;
     padding-left: 20px;
-    background-color: #ffdcdc;
+    background-color: #181818;
     height: 10vh;
     width: 100%;
     display: inline-flex;
@@ -197,6 +206,7 @@ th{
     align-items: center;
 }
 .spanfooter{
+    color: #fff;
     padding: 15px;
     display:flex;
     align-items: center;
@@ -205,7 +215,8 @@ th{
     font-style: italic;
 }
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (min-width: 1200px) {
 
     .banner{
         display: flex;
@@ -215,8 +226,9 @@ th{
         text-align: center;
     }
     .checkboxs-buscador{
-        background-color: #ffdcdc;
+        background-color: #832828;
         display: flex;
+        flex-wrap: nowrap;
         padding-left: 20px;
     }
     .input-group{
@@ -229,13 +241,12 @@ th{
         padding: 5px;
         margin: 0px 5px;
         border: none;
-        background-color: #ffdcdc;
+        background-color: #832828
     }
     .bg-main-home-upcommingevents{
         height: 100vh;
         display: unset;
         display: flex;
-        background-color: #ffdcdc;
         flex-wrap: wrap;
         padding: 10px;
     }
@@ -300,7 +311,7 @@ th{
     }
     .input-group{
         margin: 10px;
-        padding: 5px;
+        padding: 10px;
         justify-content: center;
     }
     .buttonsearch{
@@ -357,10 +368,10 @@ th{
         display: block;
         height: unset;
         height: 100vh;
-        background-color: #ffdcdc;
+        background-color: #fff;
     }
     table{
-        background-color: #ffdcdc;
+        background-color: #fff;
         width: 100%;
         flex-direction: column;
     }
