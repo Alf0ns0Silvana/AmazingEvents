@@ -4,13 +4,55 @@
     margin: 0;
 }
 
+/* Seccion nav */
+
+.navegation-div{
+    background-color:#2c2c2c;
+    padding-top: 15px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: -35px;
+}
+.navegation-logo{
+    padding: 10px 15px;
+}
+nav{
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-enlace{
+    color: #f83d88;
+    text-decoration: none;
+    border: 1px solid #f83d88;
+    border-radius: 8px;
+    padding: 6px 15px;
+    margin: 0px 5px;
+}
+.nav-enlace:hover{
+    color: #fff;
+    background-color:#f83d88;
+    transition: .5s;
+}
+.nav-responsive{
+    position: relative;
+    color: #f83d88;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 5px;
+    display: none;
+
+}
+
 /* Banner */ 
 
 .banner{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #832828;
+    background-color:  #2c2c2c;
     width: 100%;
     height: 10vh;
 }
@@ -21,7 +63,7 @@
     text-decoration: none;
     text-align: center;
     color: #fff;
-    background-color: #832828;
+    background-color: #2c2c2c;
     border: none;
     padding: 5px 10px;
     font-size: 20px;
@@ -37,6 +79,7 @@
     padding-left: 25px;
 }
 .subtittle{
+    text-align: center;
     color:#fff;
     font-size: 35px;
     font-style: normal;
@@ -44,12 +87,11 @@
 }
 .checkboxs-buscador{
     color: #fff;
-    background-color: #832828;
+    background-color:  #2c2c2c;
     display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
     padding-left: 25px;
-
 }
 .input-group{
     margin-top: 0px;
@@ -57,14 +99,16 @@
     align-items: flex-start;
 }
 .buttonsearch{
-    height: 40px;
+    height: 45px;
     padding: 5px;
     margin: 0px 5px;
     border: none;
-    color: #fff;
-    background-color: #832828;
+    background-color: #2c2c2c;
+    color:  #f83d88;
 }
+
 .bg-main-home-upcommingevents{
+    border-top: 2px solid #f83d88;
     height: 100vh;
     display: flex;
     background-color: #fff;
@@ -92,7 +136,7 @@
     align-items: center;
 }
 
-/* seccion tipo event */
+/* Seccion detail event */
 
 .bg-main-event{
     height: 85vh;
@@ -126,46 +170,48 @@
     width: 50%;
 }
 
-/* seccion contact */
+/* Seccion contact */
 
 .bg-main-contact{
+    border-top: 2px solid #f83d88;
     background-color: #fff;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start
+    align-items: flex-start;
 } 
 .formulario{
     padding: 30px;
-    margin: 30px;
+    margin: 50px;
     width: 50%;
 }
 .formulario .btn {
-    margin-top: 10px;
-    border: 1px solid #832828 ;
+    margin-top: 20px;
+    border: 1px solid #f83d88;
     background-color:transparent;
-    color: #832828
+    color: #f83d88;
 }
 .formulario .btn:hover{
     color: #fff;
     background-color: transparent;
-    border: 1px solid #832828;
-    background-color: #832828;
+    border: 1px solid #f83d88;
+    background-color:#f83d88;
 }
 .subtittle2{
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
-    color: #832828;
+    color:#f83d88;
     font-size: 30px;
     font-style: oblique;
     font-weight: 400;
 }
 
-/* seccion stats */
+/* Seccion stats */
 
 .bg-main-stats{
+    border-top: 2px solid #f83d88;
     height: 100vh;
     display: flex;
     background-color: #fff;
@@ -186,12 +232,13 @@ tbody td{
 }
 th{
     color: #fff;
-    background-color: #832828
+    background-color:  #2c2c2c;
 }
 
-/* footer */ 
+/* Footer */ 
 
 .footer{
+    border-top: 2px solid #f83d88;
     display: flex;
     background-color: #181818;
 }
@@ -226,7 +273,7 @@ th{
         text-align: center;
     }
     .checkboxs-buscador{
-        background-color: #832828;
+        background-color:  #2c2c2c;
         display: flex;
         flex-wrap: nowrap;
         padding-left: 20px;
@@ -241,7 +288,7 @@ th{
         padding: 5px;
         margin: 0px 5px;
         border: none;
-        background-color: #832828
+        background-color:  #2c2c2c;
     }
     .bg-main-home-upcommingevents{
         height: 100vh;
@@ -288,10 +335,10 @@ th{
         display: block;
         height: unset;
         height: 100vh;
-        background-color: #ffdcdc;
+        background-color: #fff;
     }
     table{
-        background-color: #ffdcdc;
+        background-color: #fff;
         width: 100%;
         flex-direction: column;
     }
@@ -302,12 +349,25 @@ th{
 }
 
  @media screen and (max-width: 700px) {
-    
+    nav{
+        display: none;
+    }    
+    .nav-responsive{
+        display: inline-flex;
+        justify-content: flex-end;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        padding: 10px 0;
+    }
+
     .checkboxs-buscador{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     .input-group{
         margin: 10px;
@@ -319,6 +379,7 @@ th{
         padding: 5px;
         margin: 0px 5px;
         border: none;
+        color: #f83d88;
     }
 
     .bg-main-home-upcommingevents{

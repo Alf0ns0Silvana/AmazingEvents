@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/assets/LogoAE.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Amazing Events - Event Details </title>
@@ -13,27 +16,22 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg bg-danger-subtle text-emphasis-danger">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/LogoAE.png" alt="Logo" width="120" height="35" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
-                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./index.html">Home</a>
-                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./upcomingevents.html">Upcoming
-                        Events</a>
-                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./pastevent.html">Past Events</a>
-                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./contact.html">Contact</a>
-                    <a class="btn bg-transparent btn-outline-secondary me-md-2" href="./stats.html">Stats</a>
+    <div class="navegation-div">
+        <a class="navegation-logo" href="#">
+            <img src="./assets/LogoAE.png" alt="Logo" width="135" height="45" class=""></a>
+                <nav id="nav">
+                    <ul>
+                        <li><a class="nav-enlace" href="./index.html" onclick="seleccionar()">Home</a></li>
+                        <li><a class="nav-enlace" href="./upcomingevents.html" onclick="seleccionar()">Upcoming Events</a></li>
+                        <li><a class="nav-enlace" href="./pastevent.html" onclick="seleccionar()">Past Events</a></li>
+                        <li><a class="nav-enlace" href="./contact.html" onclick="seleccionar()">Contact</a></li>
+                        <li><a class="nav-enlace" href="./stats.html" onclick="seleccionar()">Stats</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-            </div>
-        </div>
-    </nav>
+    </div>
 </header>
 
     <main class="bg-main-event">

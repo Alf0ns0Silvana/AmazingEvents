@@ -1,3 +1,20 @@
+let menuVisible=false;
+
+function mostrarOcultarMenu(){
+    if(menuVisible){
+        document.getElementsById("nav").classList="";
+        menuVisible=false;
+    }else{
+      document.getElementsById("nav").classList="responsive";
+        menuVisible=true;
+    }
+}
+
+function seleccionar(){
+  document.getElementsById("nav").classList="";
+    menuVisible=false;
+}
+
 let htmlEvents = "";
 let cardContainer = document.getElementById("containerCard");
 for (let event of data.events) {
