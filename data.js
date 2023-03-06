@@ -185,3 +185,14 @@ function createCard(event) {
   </div>`
   return card;
 };
+
+let currentDate = new Date(data.currentDate);
+console.log(currentDate);
+
+function createCheckbox(category) {
+  let checkbox = `<div>
+  <input type="checkbox" id=${id.category} name=${id.category}  value=${id.category} >
+  <label for="category1"></label>
+</div>`
+return checkbox;
+};
