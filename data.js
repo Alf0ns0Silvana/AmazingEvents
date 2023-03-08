@@ -171,7 +171,8 @@ let data = {
     }
   ]
 };
-function createCard(event) {
+
+function createcard(event) {
   let card =  `<div class="card d-flex text-center border-secondary" style="width: 15rem;">
   <img src="${event.image}" class="card-img-top">
   <div class="card-body">
@@ -180,19 +181,8 @@ function createCard(event) {
   </div>
     <div class="d-flex justify-content-center align-items-center align-self-bottom mb-3">
       <span>Price: $ ${event.price}</span>
-        <a href="./event.html" class="btn btn-outline-secondary me-md-2" id=${event._id} onClick="detailCard(this.id)">More</a>
+        <a href="./event.html?id=${event._id}" class="btn btn-outline-secondary me-md-2" >More</a>
     </div>
   </div>`
   return card;
-};
-
-let currentDate = new Date(data.currentDate);
-console.log(currentDate);
-
-function createCheckbox(category) {
-  let checkbox = `<div>
-  <input type="checkbox" id=${id.category} name=${id.category}  value=${id.category} >
-  <label for="category1"></label>
-</div>`
-return checkbox;
 };

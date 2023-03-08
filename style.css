@@ -85,88 +85,30 @@ nav{
     font-style: normal;
     font-weight: 400;
 }
-.checkboxs-buscador{
-    color: #fff;
-    background-color:  #2c2c2c;
-    display: flex;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    padding-left: 25px;
-}
-.input-group{
-    margin: 5px;
-    padding: 5px;
-    justify-content: end;
-    align-items: center;
-}
-.buttonsearch{
-    height: 45px;
-    padding: 5px;
-    margin: 0px 5px;
-    border: none;
-    background-color: #2c2c2c;
-    color:  #f83d88;
-}
-
 .bg-main-home-upcommingevents{
-    border-top: 2px solid #f83d88;
     display: flex;
     background-color: #fff;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
-}
-.seccion-cards{
-    margin: 10px 35px;
-}
-.card{
-    padding: 15px 15px;
 }
 .card img{
     box-shadow: 0px 0px 8px 8px rgba(94, 94, 94, 0.3)
 }
-.card-body{
-    display: block;   
-    text-align: center;
-}
-.card-body2{
+
+.catebus{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 
 /* Seccion detail event */
 
-.bg-main-event{
-    height: 85vh;
-    background-color: #ffdcdc;
-    padding: 20px;
-} 
-.seccion-card-event{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-.card-event{
-    display: inline-flex;
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 30px;
-    margin-top: 50px;
-    width: 80%;
-    height: 45vh;
-}
-.card-event img{
-    box-shadow: 0px 0px 10px 10px rgba(17, 17, 17, 0.3)
-}
-.card-event-body {
-    display: inline-block;
-    border: 1px solid black;
-    margin: 20px;
-    padding-top: 50px;
-    text-align: center;
-    width: 50%;
+.cardevent>.card{
+    max-width: 95%;
+    margin: 25px;
+    padding: 35px;
 }
 
 /* Seccion contact */
@@ -184,17 +126,17 @@ nav{
     margin: 50px;
     width: 50%;
 }
-.formulario .btn {
-    margin-top: 20px;
+button.btn {
     border: 1px solid #f83d88;
-    background-color:transparent;
-    color: #f83d88;
+    border-radius: 0%;
+    background-color: black;
+    color: #fff
 }
-.formulario .btn:hover{
+button.btn:hover{
     color: #fff;
     background-color: transparent;
     border: 1px solid #f83d88;
-    background-color:#f83d88;
+    background-color: #f83d88;
 }
 .subtittle2{
     margin-top: 25px;
@@ -269,61 +211,17 @@ th{
         padding-bottom: 20px;
         text-align: center;
     }
-    .checkboxs-buscador{
-        background-color:  #2c2c2c;
-        display: flex;
-        flex-wrap: nowrap;
-        padding-left: 20px;
-    }
-    .input-group{
-        margin-top: 0px;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-    .buttonsearch{
-        height: 40px;
-        padding: 5px;
-        margin: 0px 5px;
-        border: none;
-        background-color:  #2c2c2c;
-    }
     .bg-main-home-upcommingevents{
         display: unset;
         display: flex;
         flex-wrap: wrap;
         padding: 10px;
     }
-    .seccion-cards{
-        display: flex;
-        flex-direction: row;
-        margin: 10px 35px;
-    }
     .card{
         width: 100%;
         padding: 30px 25px;
     }
-    .bg-main-event{
-        padding: unset;
-    }
-    .card-event{
-        display: block;
-        margin-top: unset;
-        width: 50%;
-        height: 80vh;
-    }
-    .card-event img{
-        width: 100%;
-        height: 40vh;
-    }
-    .card-event-body {
-        margin: unset;
-        height: 30vh;
-        padding-top: 10px;
-        margin-top: 15px;
-        border-radius: 5px;
-        width: 100%;
-    }
-
+    
     .formulario {
         width: 60%;
     }
@@ -358,62 +256,21 @@ th{
         padding: 10px 0;
     }
 
-    .checkboxs-buscador{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-left: 10px;
-    }
-    .input-group{
-        margin: 10px;
-        padding: 10px;
-        justify-content: center;
-    }
-    .buttonsearch{
-        height: 40px;
-        padding: 5px;
-        margin: 0px 5px;
-        border: none;
-        color: #f83d88;
-    }
-
     .bg-main-home-upcommingevents{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         padding: 10px;
-}
-    .seccion-cards{
-        display: flex;
-        flex-direction: row;
-        margin: 5px 5px;
-        flex-wrap: nowrap;
+    }
+
+    .catebus{
+        flex-direction: column;
+        margin: 10px;
     }
     .card{
         padding: 20px 15px;
     }
     
-    .bg-main-event{
-        padding: unset;
-    }
-    .card-event{
-        display: block;
-        margin-top: unset;
-        width: 80%;
-        height: 80vh;
-    }
-    .card-event img{
-        width: 100%;
-        height: 40vh;
-    }
-    .card-event-body {
-        margin: unset;
-        height: 30vh;
-        padding-top: 10px;
-        margin-top: 15px;
-        border-radius: 5px;
-        width: 100%;
-    }
     .formulario {
         width: 80%;
     }
