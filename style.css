@@ -4,10 +4,17 @@
     margin: 0;
 }
 
-/* Seccion nav */
+/* Seccion header */
+
+#header{
+    background-image: url(/assets/backgroundbody15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 60px;
+}
 
 .navegation-div{
-    background-color:#2c2c2c;
     padding-top: 15px;
 }
 nav ul {
@@ -19,7 +26,6 @@ nav ul {
     padding: 10px 15px;
 }
 nav{
-    background-color: #2c2c2c;
     display: flex;
     justify-content: flex-end;
 }
@@ -52,7 +58,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  #2c2c2c;
     width: 100%;
     height: 10vh;
 }
@@ -63,7 +68,6 @@ nav{
     text-decoration: none;
     text-align: center;
     color: #fff;
-    background-color: #2c2c2c;
     border: none;
     padding: 5px 10px;
     font-size: 20px;
@@ -86,8 +90,9 @@ nav{
     font-weight: 400;
 }
 .bg-main-home-upcommingevents{
+    background-color: #250a01;
+    min-height: 650px;
     display: flex;
-    background-color: #fff;
     flex-direction: row;
     justify-content: center;
 }
@@ -96,26 +101,32 @@ nav{
 }
 
 .catebus{
+    font-size: 17px;
+    color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+
 }
 
 /* Seccion detail event */
 
+.pagevent {
+    height: 100vh;
+}
+
 .cardevent>.card{
     max-width: 95%;
-    margin: 25px;
+    margin: 50px;
     padding: 35px;
 }
 
 /* Seccion contact */
 
 .bg-main-contact{
-    border-top: 2px solid #f83d88;
-    background-color: #fff;
+    background-color:#250a01;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,24 +136,25 @@ nav{
     padding: 30px;
     margin: 50px;
     width: 50%;
+    color:#fff;
 }
 button.btn {
-    border: 1px solid #f83d88;
-    border-radius: 0%;
-    background-color: black;
-    color: #fff
+    margin-top: 10px;
+    border: 1px solid  #db9137;
+    border-radius: 10%;
+    background-color: #db9137;
+    color: #fff;
 }
 button.btn:hover{
     color: #fff;
     background-color: transparent;
-    border: 1px solid #f83d88;
-    background-color: #f83d88;
+    border: 2px solid #f3cd9d;
+    background-color: #ffc400;
 }
 .subtittle2{
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
-    color:#f83d88;
     font-size: 30px;
     font-style: oblique;
     font-weight: 400;
@@ -151,9 +163,9 @@ button.btn:hover{
 /* Seccion stats */
 
 .bg-main-stats{
-    border-top: 2px solid #f83d88;
+    height: 100vh;
     display: flex;
-    background-color: #fff;
+    background-color: #250a01;
     flex-direction: row;
     justify-content: center;
     padding: 10px;
@@ -164,27 +176,27 @@ table{
 }
 table, td, th{
     padding: 15px 3px;
-    border: 1px solid black;
+    border: 1px solid 
 }
 tbody td{ 
-    border: 1px solid black;
+    border: 1px solid #fff;
+    color: #fff;
 }
 th{
     color: #fff;
-    background-color:  #2c2c2c;
+    background-color:rgba(41, 6, 6, 0.938);
 }
 
 /* Footer */ 
 
 .footer{
-    border-top: 2px solid #f83d88;
     display: flex;
-    background-color: #181818;
+    background-color:#000;
 }
 .iconos-footer{
     color: #fff;
     padding-left: 20px;
-    background-color: #181818;
+    background-color: #000;
     height: 10vh;
     width: 100%;
     display: inline-flex;
@@ -228,10 +240,12 @@ th{
     .bg-main-stats{
         display: block;
         height: unset;
-        background-color: #fff;
+        background-color:#250a01;
+        height: 100vh;
     }
     table{
-        background-color: #fff;
+        margin-top: 25px;
+        background-color: #250a01;
         width: 100%;
         flex-direction: column;
     }
@@ -278,10 +292,10 @@ th{
     .bg-main-stats{
         display: block;
         height: unset;
-        background-color: #fff;
+        background-color:#250a01;
     }
     table{
-        background-color: #fff;
+        margin-top: 35px;
         width: 100%;
         flex-direction: column;
     }

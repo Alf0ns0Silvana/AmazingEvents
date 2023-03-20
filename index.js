@@ -1,4 +1,3 @@
-
 let htmlEvents = "";
 let cardContainer = document.getElementById("containerCard");
 for (let event of data.events) {

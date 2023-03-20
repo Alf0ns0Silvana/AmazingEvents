@@ -16,29 +16,29 @@
 </head>
 
 <body>
-    <div class="navegation-div">
-        <a class="navegation-logo" href="#">
-            <img src="./assets/LogoAE.png" alt="Logo" width="135" height="45" class=""></a>
-                <nav id="nav">
-                    <ul>
-                        <li><a class="nav-enlace" href="./index.html" onclick="seleccionar()">Home</a></li>
-                        <li><a class="nav-enlace" href="./upcomingevents.html" onclick="seleccionar()">Upcoming Events</a></li>
-                        <li><a class="nav-enlace" href="./pastevent.html" onclick="seleccionar()">Past Events</a></li>
-                        <li><a class="nav-enlace" href="./contact.html" onclick="seleccionar()">Contact</a></li>
-                        <li><a class="nav-enlace" href="./stats.html" onclick="seleccionar()">Stats</a></li>
-                    </ul>
-                </nav>
-                <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-    </div>
-        <header>
+    <header id="header">
+        <div class="navegation-div">
+            <a class="navegation-logo" href="#">
+                <img src="./assets/LogoAE.png" alt="Logo" width="135" height="45" class=""></a>
+                    <nav id="nav">
+                        <ul>
+                            <li><a class="nav-enlace" href="./index.html">Home</a></li>
+                            <li><a class="nav-enlace" href="./upcomingevents.html">Upcoming Events</a></li>
+                            <li><a class="nav-enlace" href="./pastevent.html">Past Events</a></li>
+                            <li><a class="nav-enlace" href="./contact.html">Contact</a></li>
+                            <li><a class="nav-enlace" href="./stats.html">Stats</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-responsive">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+        </div>
+
             <div class="banner">
                 <a class="button" href="./upcomingevents.html"><span> &#10096;</span></a>
                 <h3 class="subtittle"> Past Events </h3>
                 <a class="button" href="./contact.html"><span> &#10097;</span></a>
             </div>
-        </header>
 
             <div class="catebus ">
                 <div class="categoria">
@@ -52,7 +52,7 @@
                     </form>
                 </div>
             </div>
-
+    </header>
             <main class="bg-main-home-upcommingevents">
                 <div class="d-flex gap-5 my-5 mx-5 flex-wrap justify-content-evenly" id="cards">
                 </div>
