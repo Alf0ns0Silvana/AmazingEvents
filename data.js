@@ -1,5 +1,3 @@
-/* sincronizar api  */
-
 let urlApi = "https://mindhub-xj03.onrender.com/api/amazing";
 async function getApiEvents(){
   try {
@@ -14,7 +12,6 @@ async function getApiEvents(){
 getApiEvents();
 let data = JSON.parse(localStorage.getItem('dataLocal'));
 
-
 function createcard(event) {
   let card =  `<div class="card d-flex text-center border-secondary" style="width: 15rem;">
   <img src="${event.image}" class="card-img-top">
@@ -22,9 +19,9 @@ function createcard(event) {
       <h3 class="card-title mb-3">${event.name}</h3>
       <p class="card-text mb-3">${event.description}</p>
   </div>
-    <div class="d-flex justify-content-center align-items-center align-self-bottom mb-3">
+    <div class="d-flex justify-content-center align-items-center mb-3">
       <span>Price: $ ${event.price}</span>
-        <a href="./event.html?id=${event._id}" class="btn btn-outline-secondary me-md-2" >More</a>
+        <a href="./event.html?id=${event._id}" class="btn btn-outline-secondary" style="margin-left: 10px;">More</a>
     </div>
   </div>`
   return card;

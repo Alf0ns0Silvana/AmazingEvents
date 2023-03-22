@@ -170,13 +170,8 @@ button.btn:hover{
     justify-content: center;
     padding: 10px;
 }
-
-table{
+table.table-bordered {
     width: 80%;
-}
-table, td, th{
-    padding: 15px 3px;
-    border: 1px solid 
 }
 tbody td{ 
     border: 1px solid #fff;
@@ -213,6 +208,10 @@ th{
     font-style: italic;
 }
 
+#cards h6{
+    color: #fff;
+    font-size: 25px;
+}
 
 @media screen and (min-width: 1200px) {
 
@@ -235,13 +234,13 @@ th{
     }
     
     .formulario {
-        width: 60%;
+        width: 50%;
     }
     .bg-main-stats{
         display: block;
         height: unset;
         background-color:#250a01;
-        height: 100vh;
+
     }
     table{
         margin-top: 25px;
